@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+ufc_inspect.egg-info/PKG-INFO
+ufc_inspect.egg-info/SOURCES.txt
+ufc_inspect.egg-info/dependency_links.txt
+ufc_inspect.egg-info/requires.txt
+ufc_inspect.egg-info/top_level.txt

@@ -1,0 +1,30 @@
+[project]
+name = "ufc-inspect"
+version = "0.1.0"
+description = "4D Gaussian Splatting viewer with FreeTimeGS implementation"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision",
+    "opencv-python",
+    "numpy",
+    "pillow",
+    "tqdm",
+    "fastapi",
+    "uvicorn",
+    "jinja2",
+    "aiofiles",
+    "plyfile",
+    "open3d",
+    "trimesh",
+    "scipy",
+    "matplotlib",
+    "imageio[ffmpeg]",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "jupyter",
+    "pytest",
+]

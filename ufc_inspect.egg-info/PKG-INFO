@@ -1,3 +1,26 @@
+Metadata-Version: 2.4
+Name: ufc-inspect
+Version: 0.1.0
+Summary: 4D Gaussian Splatting viewer with FreeTimeGS implementation
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=2.0.0
+Requires-Dist: torchvision
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: tqdm
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: jinja2
+Requires-Dist: aiofiles
+Requires-Dist: plyfile
+Requires-Dist: open3d
+Requires-Dist: trimesh
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: imageio[ffmpeg]
+
 # FreeTimeGS 4D Gaussian Splatting Viewer
 
 A streamlined implementation of FreeTimeGS for 4D Gaussian Splatting with web-based visualization.

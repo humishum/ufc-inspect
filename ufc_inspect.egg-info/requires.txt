@@ -1,0 +1,16 @@
+torch>=2.0.0
+torchvision
+opencv-python
+numpy
+pillow
+tqdm
+fastapi
+uvicorn
+jinja2
+aiofiles
+plyfile
+open3d
+trimesh
+scipy
+matplotlib
+imageio[ffmpeg]
