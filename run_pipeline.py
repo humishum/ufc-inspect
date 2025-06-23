@@ -42,15 +42,6 @@ def find_video_file(videos_dir="videos"):
     print(f"No video files found in '{videos_dir}'")
     return None
 
-def setup_environment():
-    """Install dependencies using uv"""
-    print("=== Setting up environment ===")
-    
-    # Install dependencies
-    if not run_command(["uv", "pip", "install", "-e", "."], "Installing dependencies"):
-        return False
-    
-    return True
 
 def main():
     parser = argparse.ArgumentParser(description="Run complete FreeTimeGS pipeline")
@@ -60,9 +51,6 @@ def main():
     
     args = parser.parse_args()
     
-    # Setup environment
-    # if not setup_environment():
-    #     sys.exit(1)
     
     # Find video file
     video_path = args.video if args.video else find_video_file()
@@ -72,6 +60,8 @@ def main():
         print("2. Specify a video path with --video, or")
         print("3. Use --skip-training to just run the viewer")
         sys.exit(1)
+
+   
     
     if not args.skip_training:
         # Step 1: Process video
@@ -93,9 +83,10 @@ def main():
             "--output_dir", "trained_model",
             "--iterations", str(args.iterations)
         ], "Training 4D Gaussian Splatting model"):
-            print("Training failed. You may need a GPU for optimal performance.")
+            
             # Create dummy data for demo
-            create_dummy_model()
+            raise Exception("Training failed. You may need a GPU for optimal performance.")
+            # create_dummy_model()
     
     # Step 3: Launch web viewer
     print("\nLaunching web viewer...")
