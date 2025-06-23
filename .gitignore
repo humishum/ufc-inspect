@@ -1,0 +1,6 @@
+videos/
+.venv/
+ufc_inspect.egg-info/
+trained_model/
+.DS_Store
+output/ 
